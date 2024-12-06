@@ -1,6 +1,7 @@
 # Azubi_Assignment
 Azubi Assessment Exams
 Achieving Predictive Modeling for Client Subscription
+
 In this article, we will walk through the essential processes that were followed to build a predictive model aimed at forecasting whether a client would subscribe to a bank's term deposit product. These steps include data analysis, feature engineering, model building, and evaluation. 
 1. Understanding the Problem
 The goal of the task was to predict if a client would subscribe to a bank's term deposit product based on various features collected during direct marketing campaigns. The dataset provided contains information about previous clients, such as their job type, marital status, education, and previous contact information with the bank. The target variable (what we want to predict) is whether a client subscribed to the term deposit, labeled as yes or no.
