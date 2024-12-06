@@ -4,9 +4,10 @@ Achieving Predictive Modeling for Client Subscription
 
 In this article, we will walk through the essential processes that were followed to build a predictive model aimed at forecasting whether a client would subscribe to a bank's term deposit product. These steps include data analysis, feature engineering, model building, and evaluation. 
 1. Understanding the Problem
+   
 The goal of the task was to predict if a client would subscribe to a bank's term deposit product based on various features collected during direct marketing campaigns. The dataset provided contains information about previous clients, such as their job type, marital status, education, and previous contact information with the bank. The target variable (what we want to predict) is whether a client subscribed to the term deposit, labeled as yes or no.
 
-2. Exploratory Data Analysis (EDA)
+3. Exploratory Data Analysis (EDA)
 Before jumping into building a model, we needed to understand the data thoroughly. This process is called Exploratory Data Analysis (EDA). Here's how we approached it:
 A. Looking at the Data
 First, we loaded the dataset and examined its structure:
@@ -19,17 +20,18 @@ Next, we reviewed some key statistics:
 C. Checking for Missing Values
 Data often has missing values, and it’s important to identify them early on. We used simple techniques to check for any columns with missing data, which might need to be handled later (either by removing or filling in the missing values).
 
-
 D. Target Variable Distribution
 The next step was to check the balance of our target variable (y), which indicates whether a client subscribed to the term deposit:
 •	We used a count plot to visually assess how many clients subscribed (yes) versus those who did not (no). This showed whether the data was balanced or imbalanced.
 E. Feature Correlations
+
 We then looked at the relationships between different numerical features:
 •	We used a correlation heatmap to see how features like age, balance, and previous contact duration are related to one another.
 •	This helped us understand which features might be more influential in predicting client subscriptions.
 F. Feature Distributions and Outliers
 To see how individual features were spread out, we created histograms for each numerical feature and checked for outliers using box plots. Outliers are extreme values that could skew the model’s performance, so we needed to identify and decide whether to keep or remove them.
 G. Categorical Feature Analysis
+
 For categorical features like job, education, and marital status, we used count plots to examine how these features are distributed across the target classes (yes or no). This helped us identify patterns that could influence a client's likelihood of subscribing.
 
 3. Feature Engineering
